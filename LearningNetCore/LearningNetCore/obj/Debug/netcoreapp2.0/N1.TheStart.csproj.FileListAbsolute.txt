@@ -1,0 +1,11 @@
+I:\source\LearningNetCore\LearningNetCore\LearningNetCore\bin\Debug\netcoreapp2.0\N1.TheStart.deps.json
+I:\source\LearningNetCore\LearningNetCore\LearningNetCore\bin\Debug\netcoreapp2.0\N1.TheStart.runtimeconfig.json
+I:\source\LearningNetCore\LearningNetCore\LearningNetCore\bin\Debug\netcoreapp2.0\N1.TheStart.runtimeconfig.dev.json
+I:\source\LearningNetCore\LearningNetCore\LearningNetCore\bin\Debug\netcoreapp2.0\N1.TheStart.dll
+I:\source\LearningNetCore\LearningNetCore\LearningNetCore\bin\Debug\netcoreapp2.0\N1.TheStart.pdb
+I:\source\LearningNetCore\LearningNetCore\LearningNetCore\obj\Debug\netcoreapp2.0\N1.TheStart.csprojResolveAssemblyReference.cache
+I:\source\LearningNetCore\LearningNetCore\LearningNetCore\obj\Debug\netcoreapp2.0\N1.TheStart.csproj.CoreCompileInputs.cache
+I:\source\LearningNetCore\LearningNetCore\LearningNetCore\obj\Debug\netcoreapp2.0\N1.TheStart.AssemblyInfoInputs.cache
+I:\source\LearningNetCore\LearningNetCore\LearningNetCore\obj\Debug\netcoreapp2.0\N1.TheStart.AssemblyInfo.cs
+I:\source\LearningNetCore\LearningNetCore\LearningNetCore\obj\Debug\netcoreapp2.0\N1.TheStart.dll
+I:\source\LearningNetCore\LearningNetCore\LearningNetCore\obj\Debug\netcoreapp2.0\N1.TheStart.pdb
