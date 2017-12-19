@@ -1,0 +1,70 @@
+2017-12-19 10:31:38.4224 Info Message Template Auto Format enabled
+2017-12-19 10:31:38.5807 Info Adding target File Target[allfile]
+2017-12-19 10:31:38.5807 Info Adding target File Target[ownFile-web]
+2017-12-19 10:31:38.6032 Info Adding target Null Target[blackhole]
+2017-12-19 10:31:38.6032 Info Configured from an XML element in I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Release\netcoreapp2.0\NLog.config...
+2017-12-19 10:31:38.6433 Info Found 56 configuration items
+2017-12-19 10:31:38.6664 Info Configuration initialized.
+2017-12-19 10:31:38.6846 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.5.0.6749. Product version: 4.5.0-rc02.
+2017-12-19 10:31:38.6846 Info Message Template Auto Format enabled
+2017-12-19 10:31:38.6846 Info Found 56 configuration items
+2017-12-19 10:31:38.6846 Info Adding target File Target[allfile]
+2017-12-19 10:31:38.6949 Info Adding target File Target[ownFile-web]
+2017-12-19 10:31:38.6949 Info Adding target Null Target[blackhole]
+2017-12-19 10:31:38.6949 Info Configured from an XML element in I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Release\netcoreapp2.0\NLog.config...
+2017-12-19 10:33:15.2837 Info Message Template Auto Format enabled
+2017-12-19 10:33:15.3982 Info Adding target File Target[allfile]
+2017-12-19 10:33:15.3982 Info Adding target File Target[ownFile-web]
+2017-12-19 10:33:15.3982 Info Adding target Null Target[blackhole]
+2017-12-19 10:33:15.4242 Info Configured from an XML element in I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Release\netcoreapp2.0\NLog.config...
+2017-12-19 10:33:15.4711 Info Found 56 configuration items
+2017-12-19 10:33:15.4874 Info Configuration initialized.
+2017-12-19 10:33:15.5002 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.5.0.6749. Product version: 4.5.0-rc02.
+2017-12-19 10:33:15.5002 Info Message Template Auto Format enabled
+2017-12-19 10:33:15.5002 Info Found 56 configuration items
+2017-12-19 10:33:15.5002 Info Adding target File Target[allfile]
+2017-12-19 10:33:15.5002 Info Adding target File Target[ownFile-web]
+2017-12-19 10:33:15.5002 Info Adding target Null Target[blackhole]
+2017-12-19 10:33:15.5002 Info Configured from an XML element in I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Release\netcoreapp2.0\NLog.config...
+2017-12-19 10:35:38.5784 Info Message Template Auto Format enabled
+2017-12-19 10:35:38.6667 Info Adding target File Target[allfile]
+2017-12-19 10:35:38.6667 Info Adding target File Target[ownFile-web]
+2017-12-19 10:35:38.6667 Info Adding target Null Target[blackhole]
+2017-12-19 10:35:38.6818 Info Configured from an XML element in I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Release\netcoreapp2.0\NLog.config...
+2017-12-19 10:35:38.7135 Info Found 56 configuration items
+2017-12-19 10:35:38.7312 Info Configuration initialized.
+2017-12-19 10:35:38.7312 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.5.0.6749. Product version: 4.5.0-rc02.
+2017-12-19 10:35:38.7312 Info Message Template Auto Format enabled
+2017-12-19 10:35:38.7312 Info Found 56 configuration items
+2017-12-19 10:35:38.7312 Info Adding target File Target[allfile]
+2017-12-19 10:35:38.7423 Info Adding target File Target[ownFile-web]
+2017-12-19 10:35:38.7423 Info Adding target Null Target[blackhole]
+2017-12-19 10:35:38.7423 Info Configured from an XML element in I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Release\netcoreapp2.0\NLog.config...
+2017-12-19 10:36:42.9659 Info Message Template Auto Format enabled
+2017-12-19 10:36:43.1322 Info Adding target File Target[allfile]
+2017-12-19 10:36:43.1386 Info Adding target File Target[ownFile-web]
+2017-12-19 10:36:43.1386 Info Adding target Null Target[blackhole]
+2017-12-19 10:36:43.1617 Info Configured from an XML element in I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Release\netcoreapp2.0\NLog.config...
+2017-12-19 10:36:43.2214 Info Found 56 configuration items
+2017-12-19 10:36:43.2401 Info Configuration initialized.
+2017-12-19 10:36:43.2576 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.5.0.6749. Product version: 4.5.0-rc02.
+2017-12-19 10:36:43.2576 Info Message Template Auto Format enabled
+2017-12-19 10:36:43.2576 Info Found 56 configuration items
+2017-12-19 10:36:43.2576 Info Adding target File Target[allfile]
+2017-12-19 10:36:43.2576 Info Adding target File Target[ownFile-web]
+2017-12-19 10:36:43.2576 Info Adding target Null Target[blackhole]
+2017-12-19 10:36:43.2576 Info Configured from an XML element in I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Release\netcoreapp2.0\NLog.config...
+2017-12-19 11:48:19.9963 Info Message Template Auto Format enabled
+2017-12-19 11:48:20.1297 Info Adding target File Target[allfile]
+2017-12-19 11:48:20.1339 Info Adding target File Target[ownFile-web]
+2017-12-19 11:48:20.1339 Info Adding target Null Target[blackhole]
+2017-12-19 11:48:20.1501 Info Configured from an XML element in I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Release\netcoreapp2.0\NLog.config...
+2017-12-19 11:48:20.1831 Info Found 56 configuration items
+2017-12-19 11:48:20.1986 Info Configuration initialized.
+2017-12-19 11:48:20.2150 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.5.0.6749. Product version: 4.5.0-rc02.
+2017-12-19 11:48:20.2150 Info Message Template Auto Format enabled
+2017-12-19 11:48:20.2150 Info Found 56 configuration items
+2017-12-19 11:48:20.2150 Info Adding target File Target[allfile]
+2017-12-19 11:48:20.2290 Info Adding target File Target[ownFile-web]
+2017-12-19 11:48:20.2290 Info Adding target Null Target[blackhole]
+2017-12-19 11:48:20.2290 Info Configured from an XML element in I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Release\netcoreapp2.0\NLog.config...

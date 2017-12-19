@@ -1,0 +1,18 @@
+2017-12-19 09:58:43.1078||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/   
+2017-12-19 09:58:43.7461||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 571.428ms 404 text/plain 
+2017-12-19 09:58:46.9999||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-19 09:58:47.0922||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-19 09:58:47.1036||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/19 9:58:47写日志了 
+2017-12-19 09:58:47.1036||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/19 9:58:47 
+2017-12-19 09:58:47.1241||INFO|N2.BasicConcept.CloudService|地区为洛阳这是一个云环境！服务器编号为8 
+2017-12-19 09:58:47.1452||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-19 09:58:47.2417||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 166.5615ms 
+2017-12-19 09:58:47.2417||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 249.7674ms 200 application/json; charset=utf-8 
+2017-12-19 09:58:48.3256||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-19 09:58:48.3374||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-19 09:58:48.3374||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/19 9:58:48写日志了 
+2017-12-19 09:58:48.3528||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/19 9:58:48 
+2017-12-19 09:58:48.3528||INFO|N2.BasicConcept.CloudService|地区为洛阳这是一个云环境！服务器编号为8 
+2017-12-19 09:58:48.3686||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-19 09:58:48.3686||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 42.7464ms 
+2017-12-19 09:58:48.3865||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.0484ms 200 application/json; charset=utf-8 

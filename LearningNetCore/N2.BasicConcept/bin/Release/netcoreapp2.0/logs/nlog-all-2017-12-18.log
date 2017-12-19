@@ -1,0 +1,170 @@
+2017-12-18 16:12:22.3199||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/   
+2017-12-18 16:12:22.6462||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 370.1138ms 404 text/plain 
+2017-12-18 16:15:20.3456||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 16:15:20.4442||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 16:15:20.4578||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 16:15:20写日志了 
+2017-12-18 16:15:20.4722||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 16:15:20 
+2017-12-18 16:15:20.4888||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 16:15:20.6038||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 165.2708ms 
+2017-12-18 16:15:20.6355||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 266.3579ms 200 application/json; charset=utf-8 
+2017-12-18 16:15:21.5124||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 16:15:21.5124||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 16:15:21.5289||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 16:15:21写日志了 
+2017-12-18 16:15:21.5289||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 16:15:21 
+2017-12-18 16:15:21.5474||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 16:15:21.5588||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 38.4149ms 
+2017-12-18 16:15:21.5588||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.338ms 200 application/json; charset=utf-8 
+2017-12-18 16:15:22.2535||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 16:15:22.2616||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 16:15:22.2616||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 16:15:22写日志了 
+2017-12-18 16:15:22.2757||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 16:15:22 
+2017-12-18 16:15:22.2757||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 16:15:22.3057||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 34.2618ms 
+2017-12-18 16:15:22.3338||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.6446ms 200 application/json; charset=utf-8 
+2017-12-18 16:15:22.5894||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 16:15:22.5894||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 16:15:22.6097||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 16:15:22写日志了 
+2017-12-18 16:15:22.6369||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 16:15:22 
+2017-12-18 16:15:22.6502||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 16:15:22.6502||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 60.5078ms 
+2017-12-18 16:15:22.6980||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 93.2839ms 200 application/json; charset=utf-8 
+2017-12-18 16:15:22.8671||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 16:15:22.8749||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 16:15:22.8966||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 16:15:22写日志了 
+2017-12-18 16:15:22.9126||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 16:15:22 
+2017-12-18 16:15:22.9239||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 16:15:22.9542||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 16:15:22.9542||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 59.6444ms 
+2017-12-18 16:15:22.9750||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 16:15:23.0184||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 106.8422ms 200 application/json; charset=utf-8 
+2017-12-18 16:15:23.0413||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 16:15:23写日志了 
+2017-12-18 16:15:23.0596||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 16:15:23 
+2017-12-18 16:15:23.0720||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 16:15:23.0720||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 115.8363ms 
+2017-12-18 16:15:23.0911||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 159.7796ms 200 application/json; charset=utf-8 
+2017-12-18 16:15:23.1741||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 16:15:23.1980||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 16:15:23.2218||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 16:15:23写日志了 
+2017-12-18 16:15:23.2415||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 16:15:23 
+2017-12-18 16:15:23.2601||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 16:15:23.2601||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 86.1627ms 
+2017-12-18 16:15:23.2861||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 110.924ms 200 application/json; charset=utf-8 
+2017-12-18 16:15:23.4020||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 16:15:23.4275||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 16:15:23.4477||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 16:15:23写日志了 
+2017-12-18 16:15:23.4632||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 16:15:23.4632||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 16:15:23 
+2017-12-18 16:15:23.4814||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 16:15:23.5062||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 16:15:23.5121||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 16:15:23写日志了 
+2017-12-18 16:15:23.5121||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 106.9615ms 
+2017-12-18 16:15:23.5532||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 16:15:23 
+2017-12-18 16:15:23.5589||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 139.8241ms 200 application/json; charset=utf-8 
+2017-12-18 16:15:23.5589||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 16:15:23.5814||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 102.3112ms 
+2017-12-18 16:15:23.6323||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 143.9997ms 200 application/json; charset=utf-8 
+2017-12-18 16:15:23.6810||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 16:15:23.7007||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 16:15:23.7116||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 16:15:23写日志了 
+2017-12-18 16:15:23.7266||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 16:15:23 
+2017-12-18 16:15:23.7514||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 16:15:23.7673||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 74.1116ms 
+2017-12-18 16:15:23.7901||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 94.3091ms 200 application/json; charset=utf-8 
+2017-12-18 16:15:24.1273||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 16:15:24.1436||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 16:15:24.1622||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 16:15:24写日志了 
+2017-12-18 16:15:24.1761||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 16:15:24 
+2017-12-18 16:15:24.1839||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 16:15:24.1974||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 56.4544ms 
+2017-12-18 16:15:24.2237||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 102.6544ms 200 application/json; charset=utf-8 
+2017-12-18 16:15:24.3066||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 16:15:24.3321||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 16:15:24.3403||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 16:15:24写日志了 
+2017-12-18 16:15:24.3546||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 16:15:24 
+2017-12-18 16:15:24.3546||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 16:15:24.3768||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 48.3032ms 
+2017-12-18 16:15:24.3913||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 86.8041ms 200 application/json; charset=utf-8 
+2017-12-18 17:04:31.1991||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/   
+2017-12-18 17:04:31.5097||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 348.6731ms 404 text/plain 
+2017-12-18 17:04:34.8155||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 17:04:34.9213||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 17:04:34.9346||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 17:04:34写日志了 
+2017-12-18 17:04:34.9532||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 17:04:34 
+2017-12-18 17:04:34.9616||INFO|N2.BasicConcept.CloudService|地区为长安这是一个云环境！服务器编号为1 
+2017-12-18 17:04:34.9831||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 17:04:35.0675||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 162.2583ms 
+2017-12-18 17:04:35.0786||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 260.2795ms 200 application/json; charset=utf-8 
+2017-12-18 17:04:35.9964||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 17:04:35.9964||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 17:04:36.0173||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 17:04:36写日志了 
+2017-12-18 17:04:36.0257||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 17:04:36 
+2017-12-18 17:04:36.0257||INFO|N2.BasicConcept.CloudService|地区为长安这是一个云环境！服务器编号为1 
+2017-12-18 17:04:36.0477||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 17:04:36.0644||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 52.114ms 
+2017-12-18 17:04:36.1083||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75.6897ms 200 application/json; charset=utf-8 
+2017-12-18 17:04:36.7851||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 17:04:36.7917||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 17:04:36.7917||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 17:04:36写日志了 
+2017-12-18 17:04:36.8097||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 17:04:36 
+2017-12-18 17:04:36.8097||INFO|N2.BasicConcept.CloudService|地区为长安这是一个云环境！服务器编号为1 
+2017-12-18 17:04:36.8313||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 17:04:36.8419||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 47.0609ms 
+2017-12-18 17:04:36.8640||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 65.4553ms 200 application/json; charset=utf-8 
+2017-12-18 17:04:38.7105||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 17:04:38.7218||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 17:04:38.7299||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 17:04:38写日志了 
+2017-12-18 17:04:38.7299||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 17:04:38 
+2017-12-18 17:04:38.7539||INFO|N2.BasicConcept.CloudService|地区为长安这是一个云环境！服务器编号为1 
+2017-12-18 17:04:38.7647||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 17:04:38.7756||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 54.842ms 
+2017-12-18 17:04:38.8045||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 71.8344ms 200 application/json; charset=utf-8 
+2017-12-18 17:04:39.4241||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 17:04:39.4352||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 17:04:39.4352||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 17:04:39写日志了 
+2017-12-18 17:04:39.4566||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 17:04:39 
+2017-12-18 17:04:39.4673||INFO|N2.BasicConcept.CloudService|地区为长安这是一个云环境！服务器编号为1 
+2017-12-18 17:04:39.4673||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 17:04:39.4864||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 50.6914ms 
+2017-12-18 17:04:39.4996||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 70.8546ms 200 application/json; charset=utf-8 
+2017-12-18 17:11:04.6745||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/   
+2017-12-18 17:11:04.9722||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 335.2282ms 404 text/plain 
+2017-12-18 17:11:08.1115||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 17:11:08.2229||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 17:11:08.2358||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 17:11:08写日志了 
+2017-12-18 17:11:08.2512||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 17:11:08 
+2017-12-18 17:11:08.2628||INFO|N2.BasicConcept.CloudService|地区为洛阳这是一个云环境！服务器编号为8 
+2017-12-18 17:11:08.2840||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 17:11:08.3717||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 162.9246ms 
+2017-12-18 17:11:08.3894||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 268.5344ms 200 application/json; charset=utf-8 
+2017-12-18 17:11:09.0749||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 17:11:09.0749||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 17:11:09.0911||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 17:11:09写日志了 
+2017-12-18 17:11:09.1059||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 17:11:09 
+2017-12-18 17:11:09.1059||INFO|N2.BasicConcept.CloudService|地区为洛阳这是一个云环境！服务器编号为8 
+2017-12-18 17:11:09.1285||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 17:11:09.1399||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 53.7919ms 
+2017-12-18 17:11:09.1505||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 73.4413ms 200 application/json; charset=utf-8 
+2017-12-18 17:11:09.8562||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 17:11:09.8683||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 17:11:09.8683||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 17:11:09写日志了 
+2017-12-18 17:11:09.8900||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 17:11:09 
+2017-12-18 17:11:09.8999||INFO|N2.BasicConcept.CloudService|地区为洛阳这是一个云环境！服务器编号为8 
+2017-12-18 17:11:09.8999||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 17:11:09.9210||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 53.9567ms 
+2017-12-18 17:11:09.9329||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 79.0416ms 200 application/json; charset=utf-8 
+2017-12-18 17:11:10.6399||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 17:11:10.6603||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 17:11:10.6748||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 17:11:10写日志了 
+2017-12-18 17:11:10.6883||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 17:11:10 
+2017-12-18 17:11:10.7089||INFO|N2.BasicConcept.CloudService|地区为洛阳这是一个云环境！服务器编号为8 
+2017-12-18 17:11:10.7200||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 17:11:10.7317||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 77.8198ms 
+2017-12-18 17:11:10.7485||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 117.3284ms 200 application/json; charset=utf-8 
+2017-12-18 17:11:11.3415||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:26561/api/basic/nlog   
+2017-12-18 17:11:11.3569||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) with arguments ((null)) - ModelState is Valid 
+2017-12-18 17:11:11.3677||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/18 17:11:11写日志了 
+2017-12-18 17:11:11.3677||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/18 17:11:11 
+2017-12-18 17:11:11.3909||INFO|N2.BasicConcept.CloudService|地区为洛阳这是一个云环境！服务器编号为8 
+2017-12-18 17:11:11.3990||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-18 17:11:11.3990||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N2.BasicConcept.Controllers.BasicController.BasicNlog (N2.BasicConcept) in 56.2383ms 
+2017-12-18 17:11:11.4228||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 74.5404ms 200 application/json; charset=utf-8 

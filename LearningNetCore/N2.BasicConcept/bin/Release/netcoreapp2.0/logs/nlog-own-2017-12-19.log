@@ -1,0 +1,6 @@
+2017-12-19 09:58:47.1036||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/19 9:58:47写日志了 |url: |action: 
+2017-12-19 09:58:47.1036||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/19 9:58:47 |url: |action: 
+2017-12-19 09:58:47.1241||INFO|N2.BasicConcept.CloudService|地区为洛阳这是一个云环境！服务器编号为8 |url: |action: 
+2017-12-19 09:58:48.3374||INFO|N2.BasicConcept.Controllers.BasicController|2017/12/19 9:58:48写日志了 |url: |action: 
+2017-12-19 09:58:48.3528||INFO|N2.BasicConcept.CloudService|你好，这是一个云环境！当前时间2017/12/19 9:58:48 |url: |action: 
+2017-12-19 09:58:48.3528||INFO|N2.BasicConcept.CloudService|地区为洛阳这是一个云环境！服务器编号为8 |url: |action: 

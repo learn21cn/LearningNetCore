@@ -1,0 +1,42 @@
+2017-12-19 10:31:39.2496||FATAL|Microsoft.AspNetCore.Hosting.Internal.WebHost|Application startup exception Unable to find the required services. Please add all the required services by calling 'IServiceCollection.AddMvc' inside the call to 'ConfigureServices(...)' in the application startup code.
+2017-12-19 10:31:40.1922||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-19 10:31:40.2908||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 121.9073ms 500 text/html; charset=utf-8 
+2017-12-19 10:33:15.6149||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-19 10:33:16.3075||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-19 10:33:16.5339||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 228.951ms 404 text/plain 
+2017-12-19 10:34:39.5516||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/default/   
+2017-12-19 10:34:39.6575||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.DefaultController.Index (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-19 10:34:39.6695||INFO|N3.EF.Controllers.DefaultController|Index page says hello world 
+2017-12-19 10:34:39.7085||ERROR|Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ViewResultExecutor|The view 'Index' was not found. Searched locations: /Views/Default/Index.cshtml, /Views/Shared/Index.cshtml 
+2017-12-19 10:34:39.7247||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.DefaultController.Index (N3.EF) in 82.144ms 
+2017-12-19 10:34:39.7908||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request The view 'Index' was not found. The following locations were searched:
+/Views/Default/Index.cshtml
+/Views/Shared/Index.cshtml
+2017-12-19 10:34:39.9490||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 400.0778ms 500 text/html; charset=utf-8 
+2017-12-19 10:35:38.8034||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-19 10:35:39.1527||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/default/index   
+2017-12-19 10:35:39.2619||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 124.7018ms 404 text/plain 
+2017-12-19 10:36:43.4206||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-19 10:36:44.3701||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-19 10:36:44.6191||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 258.6364ms 404 text/plain 
+2017-12-19 10:36:50.1321||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/default/index   
+2017-12-19 10:36:50.2236||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.DefaultController.Index (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-19 10:36:50.2370||INFO|N3.EF.Controllers.DefaultController|Index page says hello world 
+2017-12-19 10:36:50.2606||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-19 10:36:50.3571||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.DefaultController.Index (N3.EF) in 143.4991ms 
+2017-12-19 10:36:50.3668||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 248.9701ms 200 application/json; charset=utf-8 
+2017-12-19 11:48:20.3673||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-19 11:48:21.1809||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-19 11:48:21.4698||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 300.2262ms 404 text/plain 
+2017-12-19 11:48:42.8884||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/default/index   
+2017-12-19 11:48:43.0112||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.DefaultController.Index (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-19 11:48:43.0283||INFO|N3.EF.Test|Index page says hello world 
+2017-12-19 11:48:43.0558||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-19 11:48:43.1358||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.DefaultController.Index (N3.EF) in 137.0228ms 
+2017-12-19 11:48:43.1358||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 260.3411ms 200 application/json; charset=utf-8 
+2017-12-19 11:48:52.4057||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/default/index   
+2017-12-19 11:48:52.4143||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.DefaultController.Index (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-19 11:48:52.4143||INFO|N3.EF.Test|Index page says hello world 
+2017-12-19 11:48:52.4393||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-19 11:48:52.4542||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.DefaultController.Index (N3.EF) in 35.0523ms 
+2017-12-19 11:48:52.4741||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.1332ms 200 application/json; charset=utf-8 
