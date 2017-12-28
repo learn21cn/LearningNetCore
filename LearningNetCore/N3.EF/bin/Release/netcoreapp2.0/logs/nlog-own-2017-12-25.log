@@ -1,0 +1,2 @@
+2017-12-25 13:50:37.1942||INFO|N3.EF.Controllers.DefaultController|Index page says hello world |url: http://localhost/api/default/index|action: Index
+2017-12-25 13:51:34.9317||INFO|N3.EF.Controllers.DefaultController|Index page says hello world |url: http://localhost/api/default/index|action: Index

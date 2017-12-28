@@ -1,0 +1,1011 @@
+2017-12-28 10:58:56.1349||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://127.0.0.1:21808/iisintegration  0 
+2017-12-28 10:58:56.1544||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 21.9579ms 202  
+2017-12-28 10:59:48.4410||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 10:59:50.0436||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 10:59:50.3784||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 346.7366ms 404 text/plain 
+2017-12-28 10:59:57.7768||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/true   
+2017-12-28 10:59:58.1144||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (2, True) - ModelState is Valid 
+2017-12-28 10:59:58.3668||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 10:59:59.8940||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (54ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 10:59:59.9783||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 11:00:00.0472||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 11:00:00.1582||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 2239.7821ms 
+2017-12-28 11:00:00.2214||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2399.5965ms 200 application/json; charset=utf-8 
+2017-12-28 11:00:35.2328||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/products   
+2017-12-28 11:00:35.2813||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProducts (N3.EF) with arguments (2) - ModelState is Valid 
+2017-12-28 11:00:35.3098||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 11:00:35.3438||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE [x].[CatogaryID] = @__cid_0 
+2017-12-28 11:00:35.3608||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 11:00:35.3700||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProducts (N3.EF) in 101.2635ms 
+2017-12-28 11:00:35.3991||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 155.5009ms 200 application/json; charset=utf-8 
+2017-12-28 11:00:44.5488||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/products/1   
+2017-12-28 11:00:44.5658||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProduct (N3.EF) with arguments (2, 1) - ModelState is Valid 
+2017-12-28 11:00:44.5850||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 11:00:44.6141||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 11:00:44.6493||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404 
+2017-12-28 11:00:44.6818||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProduct (N3.EF) in 101.794ms 
+2017-12-28 11:00:44.7403||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 150.2556ms 404 text/plain 
+2017-12-28 11:00:52.5355||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/products/2   
+2017-12-28 11:00:52.5355||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProduct (N3.EF) with arguments (2, 2) - ModelState is Valid 
+2017-12-28 11:00:52.5600||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 11:00:52.5784||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 11:00:52.5906||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404 
+2017-12-28 11:00:52.6047||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProduct (N3.EF) in 53.0004ms 
+2017-12-28 11:00:52.6719||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 79.7045ms 404 text/plain 
+2017-12-28 11:00:58.1814||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/Products/2   
+2017-12-28 11:00:58.1948||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProduct (N3.EF) with arguments (2, 2) - ModelState is Valid 
+2017-12-28 11:00:58.2052||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 11:00:58.2248||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 11:00:58.2248||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404 
+2017-12-28 11:00:58.2503||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProduct (N3.EF) in 59.0675ms 
+2017-12-28 11:00:58.2815||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 79.8257ms 404 text/plain 
+2017-12-28 11:01:15.5223||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/Products?id=1   
+2017-12-28 11:01:15.5349||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProducts (N3.EF) with arguments (2) - ModelState is Valid 
+2017-12-28 11:01:15.5349||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 11:01:15.5655||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE [x].[CatogaryID] = @__cid_0 
+2017-12-28 11:01:15.5655||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 11:01:15.5870||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProducts (N3.EF) in 50.0964ms 
+2017-12-28 11:01:15.6008||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 78.0168ms 200 application/json; charset=utf-8 
+2017-12-28 11:01:27.4246||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/Products?id=002   
+2017-12-28 11:01:27.4246||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProducts (N3.EF) with arguments (2) - ModelState is Valid 
+2017-12-28 11:01:27.4426||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 11:01:27.4558||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE [x].[CatogaryID] = @__cid_0 
+2017-12-28 11:01:27.4558||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 11:01:27.4804||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProducts (N3.EF) in 45.451ms 
+2017-12-28 11:01:27.5650||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 99.3676ms 200 application/json; charset=utf-8 
+2017-12-28 11:02:02.2841||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/Products   
+2017-12-28 11:02:02.2841||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProducts (N3.EF) with arguments (2) - ModelState is Valid 
+2017-12-28 11:02:02.3075||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 11:02:02.3235||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE [x].[CatogaryID] = @__cid_0 
+2017-12-28 11:02:02.3356||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 11:02:02.3460||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProducts (N3.EF) in 49.3191ms 
+2017-12-28 11:02:02.3925||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 81.3105ms 200 application/json; charset=utf-8 
+2017-12-28 11:02:22.7300||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/Products/002   
+2017-12-28 11:02:22.7473||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProduct (N3.EF) with arguments (2, 002) - ModelState is Valid 
+2017-12-28 11:02:22.7644||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 11:02:22.7794||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 11:02:22.7924||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 11:02:22.8074||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProduct (N3.EF) in 56.1972ms 
+2017-12-28 11:02:22.8281||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 87.626ms 200 application/json; charset=utf-8 
+2017-12-28 11:35:20.6469||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 11:35:21.4563||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 11:35:21.7620||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 304.1744ms 404 text/plain 
+2017-12-28 13:32:40.9305||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/Products/002   
+2017-12-28 13:32:41.2463||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProduct (N3.EF) with arguments (2, 002) - ModelState is Valid 
+2017-12-28 13:32:41.4767||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 13:32:42.8152||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (48ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 13:32:42.8994||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 13:32:42.9525||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 13:32:43.0532||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProduct (N3.EF) in 1973.9243ms 
+2017-12-28 13:32:43.0532||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2132.3791ms 200 application/json; charset=utf-8 
+2017-12-28 13:32:50.2174||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/Products/005   
+2017-12-28 13:32:50.2344||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProduct (N3.EF) with arguments (2, 005) - ModelState is Valid 
+2017-12-28 13:32:50.2520||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 13:32:50.2673||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 13:32:50.2852||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 13:32:50.3156||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 13:32:50.3331||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProduct (N3.EF) in 105.864ms 
+2017-12-28 13:32:50.3865||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 145.485ms 200 application/json; charset=utf-8 
+2017-12-28 13:32:58.3491||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/Products/008   
+2017-12-28 13:32:58.3634||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProduct (N3.EF) with arguments (2, 008) - ModelState is Valid 
+2017-12-28 13:32:58.3634||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 13:32:58.3910||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 13:32:58.4059||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 13:32:58.4193||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404 
+2017-12-28 13:32:58.4284||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProduct (N3.EF) in 66.524ms 
+2017-12-28 13:32:58.4410||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 88.2953ms 404 text/plain 
+2017-12-28 13:33:08.8590||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/5/Products/008   
+2017-12-28 13:33:08.8674||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProduct (N3.EF) with arguments (5, 008) - ModelState is Valid 
+2017-12-28 13:33:08.8674||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 13:33:08.8838||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 13:33:08.8968||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404 
+2017-12-28 13:33:08.8968||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProduct (N3.EF) in 37.8356ms 
+2017-12-28 13:33:08.9172||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 51.9791ms 404 text/plain 
+2017-12-28 13:33:15.5723||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/5   
+2017-12-28 13:33:15.5865||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.8138ms 404 text/plain 
+2017-12-28 13:33:20.7698||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1   
+2017-12-28 13:33:20.7975||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.598ms 404 text/plain 
+2017-12-28 13:33:24.9578||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1   
+2017-12-28 13:33:24.9578||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.9881ms 404 text/plain 
+2017-12-28 13:33:35.8757||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories   
+2017-12-28 13:33:35.8851||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategories (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-28 13:33:35.8937||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 13:33:35.9299||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+ORDER BY [x].[Name] 
+2017-12-28 13:33:35.9513||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 13:33:35.9630||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategories (N3.EF) in 78.6094ms 
+2017-12-28 13:33:35.9793||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 92.2719ms 200 application/json; charset=utf-8 
+2017-12-28 13:33:43.0900||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2   
+2017-12-28 13:33:43.1226||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.8058ms 404 text/plain 
+2017-12-28 13:34:48.4191||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 13:34:49.1838||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 13:34:49.4145||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 238.7112ms 404 text/plain 
+2017-12-28 13:34:58.6858||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2   
+2017-12-28 13:34:58.7215||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.0262ms 404 text/plain 
+2017-12-28 13:35:04.8064||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/true   
+2017-12-28 13:35:05.1076||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (2, True) - ModelState is Valid 
+2017-12-28 13:35:05.3786||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 13:35:07.0104||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (61ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 13:35:07.0898||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 13:35:07.1339||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 13:35:07.2499||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 2332.5986ms 
+2017-12-28 13:35:07.2899||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2451.7208ms 200 application/json; charset=utf-8 
+2017-12-28 13:35:16.3848||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/2/false   
+2017-12-28 13:35:16.3985||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (2, False) - ModelState is Valid 
+2017-12-28 13:35:16.4216||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 13:35:16.4499||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [e].[ID], [e].[Name]
+FROM [Categories] AS [e]
+WHERE [e].[ID] = @__get_Item_0 
+2017-12-28 13:35:16.4622||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 13:35:16.4759||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 83.3888ms 
+2017-12-28 13:35:16.4959||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 97.6971ms 200 application/json; charset=utf-8 
+2017-12-28 15:02:52.2476||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 15:02:53.3775||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 15:02:53.6296||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 259.2054ms 404 text/plain 
+2017-12-28 15:05:33.1095||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories   
+2017-12-28 15:05:33.3657||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategories (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-28 15:05:33.6132||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 15:05:35.0467||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+ORDER BY [x].[Name] 
+2017-12-28 15:05:35.0974||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 15:05:35.2051||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategories (N3.EF) in 2011.2598ms 
+2017-12-28 15:05:35.2262||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2105.6676ms 200 application/json; charset=utf-8 
+2017-12-28 15:05:43.7599||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/map   
+2017-12-28 15:05:43.8011||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategoriesMap (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-28 15:05:43.8175||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 15:05:43.8388||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+ORDER BY [x].[Name] 
+2017-12-28 15:05:43.8911||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 15:05:43.9042||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategoriesMap (N3.EF) in 124.8045ms 
+2017-12-28 15:05:43.9229||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 152.3446ms 200 application/json; charset=utf-8 
+2017-12-28 15:05:45.7073||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/map   
+2017-12-28 15:05:45.7073||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategoriesMap (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-28 15:05:45.7227||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 15:05:45.7227||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+ORDER BY [x].[Name] 
+2017-12-28 15:05:45.7407||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 15:05:45.7407||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategoriesMap (N3.EF) in 33.2576ms 
+2017-12-28 15:05:45.7613||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 54.6392ms 200 application/json; charset=utf-8 
+2017-12-28 15:05:53.3109||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/map/1   
+2017-12-28 15:05:53.4136||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (map, True) - ModelState is Invalid 
+2017-12-28 15:05:53.4287||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 15:05:53.4478||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 73.7127ms 
+2017-12-28 15:05:53.4770||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 149.114ms 400 application/json; charset=utf-8 
+2017-12-28 15:06:10.8672||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/map/1/true   
+2017-12-28 15:06:10.8909||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.346ms 404 text/plain 
+2017-12-28 15:06:58.4182||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/map/   
+2017-12-28 15:06:58.4260||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategoriesMap (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-28 15:06:58.4399||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 15:06:58.4561||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+ORDER BY [x].[Name] 
+2017-12-28 15:06:58.4561||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 15:06:58.4796||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategoriesMap (N3.EF) in 50.6919ms 
+2017-12-28 15:06:58.5059||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.7333ms 200 application/json; charset=utf-8 
+2017-12-28 15:07:05.1752||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/map/1   
+2017-12-28 15:07:05.1752||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (map, True) - ModelState is Invalid 
+2017-12-28 15:07:05.2073||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 15:07:05.2210||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 32.4905ms 
+2017-12-28 15:07:05.2625||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 57.1868ms 400 application/json; charset=utf-8 
+2017-12-28 15:07:17.5050||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/map/true   
+2017-12-28 15:07:17.5225||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (map, True) - ModelState is Valid 
+2017-12-28 15:07:17.5369||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 15:07:17.7366||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (59ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 15:07:17.7706||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404 
+2017-12-28 15:07:17.7706||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 261.1473ms 
+2017-12-28 15:07:17.7910||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 281.799ms 404 text/plain 
+2017-12-28 15:08:18.2611||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1/true   
+2017-12-28 15:08:18.2692||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (1, True) - ModelState is Valid 
+2017-12-28 15:08:18.2829||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 15:08:18.3321||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 15:08:18.3813||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 15:08:18.4103||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 15:08:18.4432||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 170.2115ms 
+2017-12-28 15:08:18.4715||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 189.839ms 200 application/json; charset=utf-8 
+2017-12-28 15:08:30.9376||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/Map/1/true   
+2017-12-28 15:08:31.0294||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 34.0652ms 404 text/plain 
+2017-12-28 15:08:51.2784||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/Map/1/true   
+2017-12-28 15:08:51.3009||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.6016ms 404 text/plain 
+2017-12-28 15:09:41.0074||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 15:09:42.0486||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 15:09:42.3072||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 269.3665ms 404 text/plain 
+2017-12-28 15:09:50.9159||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/Map/1/true   
+2017-12-28 15:09:50.9376||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.6447ms 404 text/plain 
+2017-12-28 15:10:51.1418||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 15:10:52.1938||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 15:10:52.4407||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 256.4286ms 404 text/plain 
+2017-12-28 15:10:56.6711||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/Map/1/true   
+2017-12-28 15:10:57.0457||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategoryMap (N3.EF) with arguments (1, True) - ModelState is Valid 
+2017-12-28 15:11:00.6216||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 15:11:02.1115||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (69ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 15:11:02.2141||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 15:11:02.3420||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 15:11:02.4769||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategoryMap (N3.EF) in 5584.8786ms 
+2017-12-28 15:11:02.5023||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5817.47ms 200 application/json; charset=utf-8 
+2017-12-28 16:07:15.8562||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 16:07:16.8705||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 16:07:17.1258||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 268.5364ms 404 text/plain 
+2017-12-28 16:07:27.4599||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/Map/1/true   
+2017-12-28 16:07:27.7729||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategoryMap (N3.EF) with arguments (1, True) - ModelState is Valid 
+2017-12-28 16:07:27.9910||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:07:29.3401||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (74ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 16:07:29.4161||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 16:07:29.4971||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 16:07:29.6664||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategoryMap (N3.EF) in 2072.9272ms 
+2017-12-28 16:07:29.6791||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2215.2418ms 200 application/json; charset=utf-8 
+2017-12-28 16:08:21.9065||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/5/Products/1   
+2017-12-28 16:08:21.9265||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProduct (N3.EF) with arguments (5, 1) - ModelState is Valid 
+2017-12-28 16:08:21.9521||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:08:21.9900||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 16:08:22.0141||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404 
+2017-12-28 16:08:22.0267||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProduct (N3.EF) in 105.3125ms 
+2017-12-28 16:08:22.0480||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 127.6303ms 404 text/plain 
+2017-12-28 16:08:26.8550||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/5/Products/001   
+2017-12-28 16:08:26.8632||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProduct (N3.EF) with arguments (5, 001) - ModelState is Valid 
+2017-12-28 16:08:26.8632||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:08:26.8867||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 16:08:26.9018||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404 
+2017-12-28 16:08:26.9144||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProduct (N3.EF) in 47.3576ms 
+2017-12-28 16:08:26.9606||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.7483ms 404 text/plain 
+2017-12-28 16:08:32.0142||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/5/Products   
+2017-12-28 16:08:32.0235||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProducts (N3.EF) with arguments (5) - ModelState is Valid 
+2017-12-28 16:08:32.0332||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:08:32.0332||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 16:08:32.0556||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 16:08:32.0651||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProducts (N3.EF) in 39.3281ms 
+2017-12-28 16:08:32.0884||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60.4071ms 204  
+2017-12-28 16:08:53.4354||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1/products   
+2017-12-28 16:08:53.4420||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProducts (N3.EF) with arguments (1) - ModelState is Valid 
+2017-12-28 16:08:53.4552||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:08:53.4703||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 16:08:53.4996||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE [x].[CatogaryID] = @__cid_0 
+2017-12-28 16:08:53.5179||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 16:08:53.5179||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProducts (N3.EF) in 83.7632ms 
+2017-12-28 16:08:53.6329||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 118.3169ms 200 application/json; charset=utf-8 
+2017-12-28 16:09:04.5960||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1/products/001   
+2017-12-28 16:09:04.5960||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.GetProduct (N3.EF) with arguments (1, 001) - ModelState is Valid 
+2017-12-28 16:09:04.6199||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:09:04.6289||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 16:09:04.6600||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 16:09:04.6764||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 16:09:04.6764||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.GetProduct (N3.EF) in 80.3826ms 
+2017-12-28 16:09:04.7145||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 104.1279ms 200 application/json; charset=utf-8 
+2017-12-28 16:10:45.5827||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 16:10:46.6895||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 16:10:46.9134||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 236.4086ms 404 text/plain 
+2017-12-28 16:12:06.3065||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:18178/api/Categories/addproduct  0 
+2017-12-28 16:12:06.6057||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 415 
+2017-12-28 16:12:06.6240||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PostProduct (N3.EF) in 171.1947ms 
+2017-12-28 16:12:06.6448||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 330.8986ms 415 text/plain 
+2017-12-28 16:12:44.3266||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:18178/api/Categories/addproduct application/json 75 
+2017-12-28 16:12:44.4970||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PostProduct (N3.EF) with arguments (N3.EF.DTO.ProductDto) - ModelState is Valid 
+2017-12-28 16:12:44.7384||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:12:45.9678||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (43ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 16:12:46.1732||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PostProduct (N3.EF) in 1835.4069ms 
+2017-12-28 16:12:46.2662||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+===============================================
+ProductDto -> Product (Destination member list)
+N3.EF.DTO.ProductDto -> N3.EF.Entities.Product (Destination member list)
+
+Unmapped properties:
+ProductCatogary
+
+2017-12-28 16:12:46.4720||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2109.4551ms 500 text/html; charset=utf-8 
+2017-12-28 16:13:35.0072||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:18178/api/Categories/addproduct application/json 75 
+2017-12-28 16:13:35.0072||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PostProduct (N3.EF) with arguments (N3.EF.DTO.ProductDto) - ModelState is Valid 
+2017-12-28 16:13:35.0458||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:13:35.0662||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 16:13:35.1467||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PostProduct (N3.EF) in 130.2336ms 
+2017-12-28 16:13:35.1830||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request 
+Unmapped members were found. Review the types and members below.
+Add a custom mapping expression, ignore, add a custom resolver, or modify the source/destination type
+For no matching constructor, add a no-arg ctor, add optional arguments, or map all of the constructor parameters
+===============================================
+ProductDto -> Product (Destination member list)
+N3.EF.DTO.ProductDto -> N3.EF.Entities.Product (Destination member list)
+
+Unmapped properties:
+ProductCatogary
+
+2017-12-28 16:13:35.3117||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 279.1971ms 500 text/html; charset=utf-8 
+2017-12-28 16:20:03.2842||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 16:20:04.5655||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 16:20:04.8828||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 317.9601ms 404 text/plain 
+2017-12-28 16:20:11.0743||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:18178/api/Categories/addproduct application/json 75 
+2017-12-28 16:20:11.5271||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PostProduct (N3.EF) with arguments (N3.EF.DTO.ProductDto) - ModelState is Valid 
+2017-12-28 16:20:11.7312||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:20:13.0286||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (49ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 16:20:13.1922||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (26ms) [Parameters=[@p0='?' (Size = 450), @p1='?', @p2='?' (Size = 450), @p3='?' (Size = 51)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Products] ([ID], [Amount], [CatogaryID], [Name])
+VALUES (@p0, @p1, @p2, @p3); 
+2017-12-28 16:20:13.2356||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 16:20:13.2921||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PostProduct (N3.EF) in 2074.4687ms 
+2017-12-28 16:20:13.3086||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2233.1875ms 201 application/json; charset=utf-8 
+2017-12-28 16:21:02.8947||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1 application/json 0 
+2017-12-28 16:21:02.9109||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.435ms 404 text/plain 
+2017-12-28 16:21:10.9458||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1/true application/json 0 
+2017-12-28 16:21:10.9766||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (1, True) - ModelState is Valid 
+2017-12-28 16:21:11.0258||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:21:11.1925||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (26ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 16:21:11.2343||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 16:21:11.2521||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 16:21:11.2697||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 299.3628ms 
+2017-12-28 16:21:11.2697||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 336.0446ms 200 application/json; charset=utf-8 
+2017-12-28 16:21:44.8409||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:18178/api/Categories/addproduct application/json 75 
+2017-12-28 16:21:44.8486||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PostProduct (N3.EF) with arguments (N3.EF.DTO.ProductDto) - ModelState is Valid 
+2017-12-28 16:21:44.8625||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:21:44.8625||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 16:21:44.9518||ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (15ms) [Parameters=[@p0='?' (Size = 450), @p1='?', @p2='?' (Size = 450), @p3='?' (Size = 51)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Products] ([ID], [Amount], [CatogaryID], [Name])
+VALUES (@p0, @p1, @p2, @p3); Violation of PRIMARY KEY constraint 'PK_Products'. Cannot insert duplicate key in object 'dbo.Products'. The duplicate key value is (008).
+The statement has been terminated.
+2017-12-28 16:21:45.0563||ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'N3.EF.DAL.TContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of PRIMARY KEY constraint 'PK_Products'. Cannot insert duplicate key in object 'dbo.Products'. The duplicate key value is (008).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__108_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.<ExecuteAsync>d__17.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.<ExecuteAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.<ExecuteAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.<ExecuteAsync>d__7`2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__61.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<SaveChangesAsync>d__59.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Microsoft.EntityFrameworkCore.DbContext.<SaveChangesAsync>d__48.MoveNext() An error occurred while updating the entries. See the inner exception for details.
+2017-12-28 16:21:45.2940||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PostProduct (N3.EF) in 446.579ms 
+2017-12-28 16:21:45.3564||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request An error occurred while updating the entries. See the inner exception for details.
+2017-12-28 16:21:45.5795||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 701.7438ms 500 text/html; charset=utf-8 
+2017-12-28 16:31:35.9025||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 16:31:37.0253||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 16:31:37.2964||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 279.1316ms 404 text/plain 
+2017-12-28 16:31:42.0219||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:18178/api/Categories/addproduct application/json 75 
+2017-12-28 16:31:42.4836||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PostProduct (N3.EF) with arguments (N3.EF.DTO.ProductDto) - ModelState is Valid 
+2017-12-28 16:31:42.7242||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:31:43.1218||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (73ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 16:31:43.1692||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [x]
+        WHERE [x].[ID] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 16:31:43.1885||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 16:31:43.2337||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PostProduct (N3.EF) in 1082.9281ms 
+2017-12-28 16:31:43.2882||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1261.6766ms 500 application/json; charset=utf-8 
+2017-12-28 16:57:56.6327||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 16:57:57.7575||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 16:57:58.0152||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 268.1741ms 404 text/plain 
+2017-12-28 16:59:36.3667||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:18178/api/Categories/putproduct/008 application/json 75 
+2017-12-28 16:59:36.7674||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PutProduct (N3.EF) with arguments (008, N3.EF.DTO.ProductDto) - ModelState is Valid 
+2017-12-28 16:59:36.9863||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 16:59:38.3651||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (48ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 16:59:38.3881||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404 
+2017-12-28 16:59:38.4038||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PutProduct (N3.EF) in 1911.7909ms 
+2017-12-28 16:59:38.4533||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2057.2329ms 404 text/plain 
+2017-12-28 17:00:08.9881||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:18178/api/Categories/putproduct/008 application/json 75 
+2017-12-28 17:00:09.0121||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PutProduct (N3.EF) with arguments (008, N3.EF.DTO.ProductDto) - ModelState is Valid 
+2017-12-28 17:00:19.7600||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 17:00:19.7735||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 17:48:34.8943||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 17:48:36.1212||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 17:48:36.4083||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 305.9603ms 404 text/plain 
+2017-12-28 17:48:50.4350||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:18178/api/Categories/putproduct/008 application/json 75 
+2017-12-28 17:48:50.8508||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PutProduct (N3.EF) with arguments (008, N3.EF.DTO.ProductDto) - ModelState is Valid 
+2017-12-28 17:48:56.6824||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 17:48:58.0407||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (45ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 17:49:04.8491||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[@p1='?' (Size = 450), @p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Products] SET [Amount] = @p0
+WHERE [ID] = @p1;
+SELECT @@ROWCOUNT; 
+2017-12-28 17:49:14.2622||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204 
+2017-12-28 17:49:14.2784||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PutProduct (N3.EF) in 23685.2646ms 
+2017-12-28 17:49:14.3041||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23863.9334ms 204  
+2017-12-28 17:49:24.0559||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1/true application/json 0 
+2017-12-28 17:49:24.0745||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (1, True) - ModelState is Valid 
+2017-12-28 17:49:24.0958||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 17:49:24.2607||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 17:49:24.3026||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 17:49:24.3239||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 17:49:24.3569||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 285.1571ms 
+2017-12-28 17:49:24.3701||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 307.5507ms 200 application/json; charset=utf-8 
+2017-12-28 18:10:12.8683||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 18:10:14.0326||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 18:10:14.2641||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 241.2657ms 404 text/plain 
+2017-12-28 18:13:14.4870||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:18178/api/Categories/1/patchproduct/008 application/json 63 
+2017-12-28 18:13:14.5928||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 57.857ms 404 text/plain 
+2017-12-28 18:13:34.3258||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1/true application/json 0 
+2017-12-28 18:13:34.7122||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (1, True) - ModelState is Valid 
+2017-12-28 18:13:34.9690||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:13:36.6728||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (89ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 18:13:36.7396||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 18:13:36.7773||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 18:13:36.9059||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 2397.1017ms 
+2017-12-28 18:13:36.9470||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2596.6657ms 200 application/json; charset=utf-8 
+2017-12-28 18:16:41.4828||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 18:16:42.6015||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 18:16:42.8450||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 246.7798ms 404 text/plain 
+2017-12-28 18:16:50.6639||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:18178/api/Categories/1/patchproduct/008 application/json 68 
+2017-12-28 18:16:51.1893||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) with arguments (1, 008, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[N3.EF.DTO.ProductDto]) - ModelState is Valid 
+2017-12-28 18:16:51.4264||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:16:52.7967||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (50ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 18:16:52.9747||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) in 2154.6186ms 
+2017-12-28 18:16:53.0689||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request Value cannot be null.
+Parameter name: path
+2017-12-28 18:16:53.4517||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2688.6853ms 500 text/html; charset=utf-8 
+2017-12-28 18:17:19.1418||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:18178/api/Categories/1/patchproduct/008 application/json 67 
+2017-12-28 18:17:19.1621||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) with arguments (1, 008, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[N3.EF.DTO.ProductDto]) - ModelState is Valid 
+2017-12-28 18:17:19.1836||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:17:19.1989||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 18:17:19.3487||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[@p1='?' (Size = 450), @p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Products] SET [Amount] = @p0
+WHERE [ID] = @p1;
+SELECT @@ROWCOUNT; 
+2017-12-28 18:17:19.3870||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204 
+2017-12-28 18:17:19.3976||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) in 248.1072ms 
+2017-12-28 18:17:19.4115||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 265.7111ms 204  
+2017-12-28 18:17:24.2284||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:18178/api/Categories/1/patchproduct/008 application/json 67 
+2017-12-28 18:17:24.2535||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) with arguments (1, 008, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[N3.EF.DTO.ProductDto]) - ModelState is Valid 
+2017-12-28 18:17:24.2535||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:17:24.2785||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 18:17:24.2957||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204 
+2017-12-28 18:17:24.3129||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) in 66.7108ms 
+2017-12-28 18:17:24.3342||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 92.7339ms 204  
+2017-12-28 18:17:34.2133||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1/true application/json 0 
+2017-12-28 18:17:34.2332||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (1, True) - ModelState is Valid 
+2017-12-28 18:17:34.2576||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:17:34.3911||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 18:17:34.4539||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 18:17:34.4765||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 18:17:34.4987||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 265.5752ms 
+2017-12-28 18:17:34.5087||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 293.8887ms 200 application/json; charset=utf-8 
+2017-12-28 18:17:49.5821||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:18178/api/Categories/1/patchproduct/008 application/json 65 
+2017-12-28 18:17:49.5821||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) with arguments (1, 008, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[N3.EF.DTO.ProductDto]) - ModelState is Valid 
+2017-12-28 18:17:49.6053||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:17:49.6192||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 18:17:49.6329||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204 
+2017-12-28 18:17:49.6424||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) in 49.5938ms 
+2017-12-28 18:17:49.6595||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 67.6221ms 204  
+2017-12-28 18:17:51.5054||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:18178/api/Categories/1/patchproduct/008 application/json 65 
+2017-12-28 18:17:51.5054||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) with arguments (1, 008, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[N3.EF.DTO.ProductDto]) - ModelState is Valid 
+2017-12-28 18:17:51.5250||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:17:51.5335||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 18:17:51.5335||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204 
+2017-12-28 18:17:51.5494||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) in 35.6874ms 
+2017-12-28 18:17:51.5494||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.4802ms 204  
+2017-12-28 18:17:58.5464||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:18178/api/Categories/1/patchproduct/008 application/json 65 
+2017-12-28 18:17:58.5560||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) with arguments (1, 008, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[N3.EF.DTO.ProductDto]) - ModelState is Valid 
+2017-12-28 18:17:58.5865||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:17:58.6008||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 18:17:58.6255||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@p1='?' (Size = 450), @p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Products] SET [Amount] = @p0
+WHERE [ID] = @p1;
+SELECT @@ROWCOUNT; 
+2017-12-28 18:17:58.6411||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204 
+2017-12-28 18:17:58.6508||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) in 95.5401ms 
+2017-12-28 18:17:58.6906||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 116.9001ms 204  
+2017-12-28 18:18:03.0410||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1/true application/json 0 
+2017-12-28 18:18:03.0505||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (1, True) - ModelState is Valid 
+2017-12-28 18:18:03.0505||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:18:03.0730||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 18:18:03.0888||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 18:18:03.0986||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 18:18:03.0986||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 58.6075ms 
+2017-12-28 18:18:03.1232||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 76.0852ms 200 application/json; charset=utf-8 
+2017-12-28 18:30:12.2189||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 18:30:13.3151||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 18:30:13.5730||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 264.0782ms 404 text/plain 
+2017-12-28 18:30:53.3358||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:18178/api/Categories/1/deleteproduct/008   
+2017-12-28 18:30:53.6407||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.DeleteProduct (N3.EF) with arguments (1, 008) - ModelState is Valid 
+2017-12-28 18:30:53.9201||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:30:55.1387||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (52ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 18:30:55.2610||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (18ms) [Parameters=[@p0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+DELETE FROM [Products]
+WHERE [ID] = @p0;
+SELECT @@ROWCOUNT; 
+2017-12-28 18:30:55.2989||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204 
+2017-12-28 18:30:55.3181||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.DeleteProduct (N3.EF) in 1855.8405ms 
+2017-12-28 18:30:55.3670||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2003.6849ms 204  
+2017-12-28 18:31:02.1347||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1/true application/json 0 
+2017-12-28 18:31:02.1602||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (1, True) - ModelState is Valid 
+2017-12-28 18:31:02.1857||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:31:02.3529||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 18:31:02.3928||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 18:31:02.4145||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 18:31:02.5204||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 363.6043ms 
+2017-12-28 18:31:02.5204||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 393.227ms 200 application/json; charset=utf-8 
+2017-12-28 18:31:07.1935||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:18178/api/Categories/1/patchproduct/008 application/json 65 
+2017-12-28 18:31:07.2643||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) with arguments (1, 008, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[N3.EF.DTO.ProductDto]) - ModelState is Valid 
+2017-12-28 18:31:07.3196||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:31:07.3501||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 18:31:07.3690||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404 
+2017-12-28 18:31:07.3822||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) in 173.9237ms 
+2017-12-28 18:31:07.4165||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 220.4507ms 404 text/plain 
+2017-12-28 18:31:12.5646||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:18178/api/Categories/addproduct application/json 75 
+2017-12-28 18:31:12.5919||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PostProduct (N3.EF) with arguments (N3.EF.DTO.ProductDto) - ModelState is Valid 
+2017-12-28 18:31:12.6084||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:31:12.6409||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 18:31:12.6619||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [x]
+        WHERE [x].[ID] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 18:31:12.7326||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 450), @p1='?', @p2='?' (Size = 450), @p3='?' (Size = 51)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Products] ([ID], [Amount], [CatogaryID], [Name])
+VALUES (@p0, @p1, @p2, @p3); 
+2017-12-28 18:31:12.7497||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 18:31:12.7795||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PostProduct (N3.EF) in 197.0774ms 
+2017-12-28 18:31:12.7966||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 222.3354ms 201 application/json; charset=utf-8 
+2017-12-28 18:32:45.5619||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-28 18:32:46.5871||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-28 18:32:46.8331||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 256.8114ms 404 text/plain 
+2017-12-28 18:32:53.7444||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PATCH http://localhost:18178/api/Categories/1/patchproduct/008 application/json 65 
+2017-12-28 18:32:54.1946||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) with arguments (1, 008, Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1[N3.EF.DTO.ProductDto]) - ModelState is Valid 
+2017-12-28 18:32:54.4091||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:32:55.8207||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (42ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 18:32:55.9922||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[@p1='?' (Size = 450), @p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Products] SET [Amount] = @p0
+WHERE [ID] = @p1;
+SELECT @@ROWCOUNT; 
+2017-12-28 18:32:56.0288||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204 
+2017-12-28 18:32:56.0598||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PatchProduct (N3.EF) in 2163.2773ms 
+2017-12-28 18:32:56.0856||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2335.7642ms 204  
+2017-12-28 18:33:07.1887||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1/true application/json 0 
+2017-12-28 18:33:07.2135||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (1, True) - ModelState is Valid 
+2017-12-28 18:33:07.2619||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:33:07.4198||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 18:33:07.4761||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 18:33:07.5030||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 18:33:07.5367||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 330.5026ms 
+2017-12-28 18:33:07.5367||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 361.9792ms 200 application/json; charset=utf-8 
+2017-12-28 18:33:18.1935||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:18178/api/Categories/addproduct application/json 75 
+2017-12-28 18:33:18.2173||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PostProduct (N3.EF) with arguments (N3.EF.DTO.ProductDto) - ModelState is Valid 
+2017-12-28 18:33:18.2300||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:33:18.2736||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [x]
+        WHERE [x].[ID] = @__cid_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 18:33:18.2987||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__id_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Products] AS [x]
+        WHERE [x].[ID] = @__id_0)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END 
+2017-12-28 18:33:18.2987||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 18:33:18.3385||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PostProduct (N3.EF) in 119.5729ms 
+2017-12-28 18:33:18.4128||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 167.8825ms 500 application/json; charset=utf-8 
+2017-12-28 18:33:27.6925||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:18178/api/Categories/putproduct/008 application/json 75 
+2017-12-28 18:33:27.7181||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.ProductsController.PutProduct (N3.EF) with arguments (008, N3.EF.DTO.ProductDto) - ModelState is Valid 
+2017-12-28 18:33:27.7300||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:33:27.7443||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__prpductId_0='?' (Size = 450), @__cid_1='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Amount], [x].[CatogaryID], [x].[Name]
+FROM [Products] AS [x]
+WHERE ([x].[ID] = @__prpductId_0) AND ([x].[CatogaryID] = @__cid_1) 
+2017-12-28 18:33:27.7738||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p1='?' (Size = 450), @p0='?'], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Products] SET [Amount] = @p0
+WHERE [ID] = @p1;
+SELECT @@ROWCOUNT; 
+2017-12-28 18:33:27.7863||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204 
+2017-12-28 18:33:27.7863||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.ProductsController.PutProduct (N3.EF) in 79.4737ms 
+2017-12-28 18:33:27.8072||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 107.7741ms 204  
+2017-12-28 18:33:32.1247||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/Categories/1/true application/json 0 
+2017-12-28 18:33:32.1329||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) with arguments (1, True) - ModelState is Valid 
+2017-12-28 18:33:32.1418||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-28 18:33:32.1620||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [x].[ID], [x].[Name]
+FROM [Categories] AS [x]
+WHERE [x].[ID] = @__cid_0
+ORDER BY [x].[ID] 
+2017-12-28 18:33:32.1762||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__cid_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [x.Products].[ID], [x.Products].[Amount], [x.Products].[CatogaryID], [x.Products].[Name]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT TOP(1) [x0].[ID]
+    FROM [Categories] AS [x0]
+    WHERE [x0].[ID] = @__cid_0
+    ORDER BY [x0].[ID]
+) AS [t] ON [x.Products].[CatogaryID] = [t].[ID]
+ORDER BY [t].[ID] 
+2017-12-28 18:33:32.1762||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-28 18:33:32.2097||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.CategoriesController.GetCategory (N3.EF) in 67.6861ms 
+2017-12-28 18:33:32.2315||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 94.0358ms 200 application/json; charset=utf-8 

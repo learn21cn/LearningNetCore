@@ -1,0 +1,192 @@
+2017-12-26 10:37:38.5576||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:38:39.3140||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:39:50.1031||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:39:51.1696||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-26 10:39:51.4801||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 327.8107ms 404 text/plain 
+2017-12-26 10:40:34.4492||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:42:08.8573||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:45:04.2503||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:45:33.0481||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:45:33.4780||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-26 10:45:43.8719||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (216ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [TestDB]; 
+2017-12-26 10:45:43.9343||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (58ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5 EXEC(N'ALTER DATABASE [TestDB] SET READ_COMMITTED_SNAPSHOT ON;'); 
+2017-12-26 10:45:43.9771||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [ID] nvarchar(450) NOT NULL,
+    [Name] nvarchar(51) NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([ID])
+); 
+2017-12-26 10:45:43.9771||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [ID] nvarchar(450) NOT NULL,
+    [Amount] decimal(8,2) NOT NULL,
+    [CatogaryID] nvarchar(450) NULL,
+    [Name] nvarchar(51) NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_Products_Categories_CatogaryID] FOREIGN KEY ([CatogaryID]) REFERENCES [Categories] ([ID]) ON DELETE CASCADE
+); 
+2017-12-26 10:45:43.9841||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Products_CatogaryID] ON [Products] ([CatogaryID]); 
+2017-12-26 10:46:18.6537||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:46:19.0043||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-26 10:46:19.1669||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2017-12-26 10:46:19.1879||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); 
+2017-12-26 10:46:19.2329||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+); 
+2017-12-26 10:46:19.2329||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); 
+2017-12-26 10:46:19.2329||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2017-12-26 10:46:19.2329||INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20171222082735_v1.1'. 
+2017-12-26 10:46:19.2970||ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [ID] nvarchar(450) NOT NULL,
+    [Details] nvarchar(max) NULL,
+    [Name] nvarchar(51) NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([ID])
+); There is already an object named 'Products' in the database.
+2017-12-26 10:47:59.4828||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:47:59.8552||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-26 10:48:10.2104||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (231ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [TestDB]; 
+2017-12-26 10:48:10.2922||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (69ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5 EXEC(N'ALTER DATABASE [TestDB] SET READ_COMMITTED_SNAPSHOT ON;'); 
+2017-12-26 10:48:10.3406||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [ID] nvarchar(450) NOT NULL,
+    [Name] nvarchar(51) NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([ID])
+); 
+2017-12-26 10:48:10.3465||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [ID] nvarchar(450) NOT NULL,
+    [Amount] decimal(8,2) NOT NULL,
+    [CatogaryID] nvarchar(450) NULL,
+    [Name] nvarchar(51) NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_Products_Categories_CatogaryID] FOREIGN KEY ([CatogaryID]) REFERENCES [Categories] ([ID]) ON DELETE CASCADE
+); 
+2017-12-26 10:48:10.3465||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Products_CatogaryID] ON [Products] ([CatogaryID]); 
+2017-12-26 10:48:10.3753||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); 
+2017-12-26 10:48:10.3941||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+); 
+2017-12-26 10:48:10.3941||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); 
+2017-12-26 10:48:10.4048||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2017-12-26 10:48:10.4048||INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20171222082735_v1.1'. 
+2017-12-26 10:48:10.4667||ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [ID] nvarchar(450) NOT NULL,
+    [Details] nvarchar(max) NULL,
+    [Name] nvarchar(51) NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([ID])
+); There is already an object named 'Products' in the database.
+2017-12-26 10:52:25.7373||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:56:41.8657||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:56:42.2454||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-26 10:56:53.6335||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (238ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [TestDB]; 
+2017-12-26 10:56:53.7009||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (60ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5 EXEC(N'ALTER DATABASE [TestDB] SET READ_COMMITTED_SNAPSHOT ON;'); 
+2017-12-26 10:56:53.7492||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [ID] nvarchar(450) NOT NULL,
+    [Name] nvarchar(51) NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([ID])
+); 
+2017-12-26 10:56:53.7492||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [ID] nvarchar(450) NOT NULL,
+    [Amount] decimal(8,2) NOT NULL,
+    [CatogaryID] nvarchar(450) NULL,
+    [Name] nvarchar(51) NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_Products_Categories_CatogaryID] FOREIGN KEY ([CatogaryID]) REFERENCES [Categories] ([ID]) ON DELETE CASCADE
+); 
+2017-12-26 10:56:53.7492||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Products_CatogaryID] ON [Products] ([CatogaryID]); 
+2017-12-26 10:58:12.8274||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:58:13.1879||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-26 10:58:13.3202||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2017-12-26 10:58:13.3381||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); 
+2017-12-26 10:58:13.3802||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+); 
+2017-12-26 10:58:13.3802||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); 
+2017-12-26 10:58:13.3852||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2017-12-26 10:58:13.3852||INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20171226025653_v1.1'. 
+2017-12-26 10:58:13.4647||ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [ID] nvarchar(450) NOT NULL,
+    [Name] nvarchar(51) NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([ID])
+); There is already an object named 'Categories' in the database.
+2017-12-26 10:59:18.5896||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:59:19.0199||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-26 10:59:51.6895||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-26 10:59:52.0565||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-26 11:00:02.6005||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (401ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [TestDB]; 
+2017-12-26 11:00:02.6727||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (61ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5 EXEC(N'ALTER DATABASE [TestDB] SET READ_COMMITTED_SNAPSHOT ON;'); 
+2017-12-26 11:00:02.7176||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+); 
+2017-12-26 11:00:02.7176||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'__EFMigrationsHistory'); 
+2017-12-26 11:00:02.7310||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId]; 
+2017-12-26 11:00:02.7310||INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20171226025919_v1.1'. 
+2017-12-26 11:00:02.7616||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Categories] (
+    [ID] nvarchar(450) NOT NULL,
+    [Name] nvarchar(51) NOT NULL,
+    CONSTRAINT [PK_Categories] PRIMARY KEY ([ID])
+); 
+2017-12-26 11:00:02.7616||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [ID] nvarchar(450) NOT NULL,
+    [Amount] decimal(8,2) NOT NULL,
+    [CatogaryID] nvarchar(450) NULL,
+    [Name] nvarchar(51) NOT NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_Products_Categories_CatogaryID] FOREIGN KEY ([CatogaryID]) REFERENCES [Categories] ([ID]) ON DELETE CASCADE
+); 
+2017-12-26 11:00:02.7616||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Products_CatogaryID] ON [Products] ([CatogaryID]); 
+2017-12-26 11:00:02.7751||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20171226025919_v1.1', N'2.0.1-rtm-125'); 

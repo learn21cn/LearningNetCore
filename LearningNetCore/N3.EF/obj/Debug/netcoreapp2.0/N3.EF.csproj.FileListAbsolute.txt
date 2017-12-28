@@ -1,0 +1,12 @@
+I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Debug\netcoreapp2.0\NLog.config
+I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Debug\netcoreapp2.0\N3.EF.deps.json
+I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Debug\netcoreapp2.0\N3.EF.runtimeconfig.json
+I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Debug\netcoreapp2.0\N3.EF.runtimeconfig.dev.json
+I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Debug\netcoreapp2.0\N3.EF.dll
+I:\source\LearningNetCore\LearningNetCore\N3.EF\bin\Debug\netcoreapp2.0\N3.EF.pdb
+I:\source\LearningNetCore\LearningNetCore\N3.EF\obj\Debug\netcoreapp2.0\N3.EF.csprojResolveAssemblyReference.cache
+I:\source\LearningNetCore\LearningNetCore\N3.EF\obj\Debug\netcoreapp2.0\N3.EF.csproj.CoreCompileInputs.cache
+I:\source\LearningNetCore\LearningNetCore\N3.EF\obj\Debug\netcoreapp2.0\N3.EF.AssemblyInfoInputs.cache
+I:\source\LearningNetCore\LearningNetCore\N3.EF\obj\Debug\netcoreapp2.0\N3.EF.AssemblyInfo.cs
+I:\source\LearningNetCore\LearningNetCore\N3.EF\obj\Debug\netcoreapp2.0\N3.EF.dll
+I:\source\LearningNetCore\LearningNetCore\N3.EF\obj\Debug\netcoreapp2.0\N3.EF.pdb

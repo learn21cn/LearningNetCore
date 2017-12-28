@@ -1,0 +1,23 @@
+2017-12-20 14:10:19.1000||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-20 14:10:19.7239||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-20 14:10:31.3129||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (208ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [TestDB]; 
+2017-12-20 14:10:31.3733||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (57ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5 EXEC(N'ALTER DATABASE [TestDB] SET READ_COMMITTED_SNAPSHOT ON;'); 
+2017-12-20 14:10:31.4178||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Products] (
+    [ID] nvarchar(450) NOT NULL,
+    [Name] nvarchar(max) NULL,
+    CONSTRAINT [PK_Products] PRIMARY KEY ([ID])
+); 
+2017-12-20 14:28:06.2049||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-20 14:28:07.8352||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-20 14:28:08.1916||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 360.6714ms 404 text/plain 
+2017-12-20 14:33:57.3499||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/test   
+2017-12-20 14:33:57.7487||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-20 14:33:58.8846||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (93ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2017-12-20 14:33:58.9030||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.TestController.Get (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-20 14:33:58.9216||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200 
+2017-12-20 14:33:58.9357||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.TestController.Get (N3.EF) in 1477.9332ms 
+2017-12-20 14:33:58.9550||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1599.8817ms 200  

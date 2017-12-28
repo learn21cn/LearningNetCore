@@ -1,0 +1,35 @@
+2017-12-25 13:52:53.5227||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-25 13:52:54.5188||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-25 13:52:54.8277||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 330.2371ms 404 text/plain 
+2017-12-25 13:52:55.2190||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/test   
+2017-12-25 13:54:01.3088||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-25 13:54:02.1503||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-25 13:54:02.4480||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 316.9295ms 404 text/plain 
+2017-12-25 13:54:05.8378||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/test   
+2017-12-25 13:54:06.3099||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-25 13:54:41.6712||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.TestController.Get (N3.EF) in 35706.0074ms 
+2017-12-25 13:54:41.8026||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 50 - Local Database Runtime error occurred. 指定的 LocalDB 实例名称无效。
+)
+2017-12-25 13:54:42.0057||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 36173.4693ms 500 text/html; charset=utf-8 
+2017-12-25 13:55:05.9745||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-25 13:55:21.2128||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-25 13:55:21.4407||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 237.7359ms 404 text/plain 
+2017-12-25 13:55:26.8649||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/test   
+2017-12-25 13:55:27.2365||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-25 14:01:26.6929||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-25 14:01:27.1056||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-25 14:01:27.2092||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 115.1656ms 404 text/plain 
+2017-12-25 14:03:01.4104||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-25 14:03:01.7348||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-25 14:03:01.8371||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 110.8717ms 404 text/plain 
+2017-12-25 14:03:47.4345||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-25 14:03:48.1521||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-25 14:03:48.4253||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 272.8714ms 404 text/plain 
+2017-12-25 14:03:49.9202||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/test   
+2017-12-25 14:03:50.2581||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-25 14:03:50.4979||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2017-12-25 14:03:50.5294||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.TestController.Get (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-25 14:03:50.5494||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200 
+2017-12-25 14:03:50.5724||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.TestController.Get (N3.EF) in 572.3506ms 
+2017-12-25 14:03:50.6242||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 683.5278ms 200  

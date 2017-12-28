@@ -1,12 +1,12 @@
+I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\bin\Debug\netcoreapp2.0\NLog.config
 I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\bin\Debug\netcoreapp2.0\N2.BasicConcept.deps.json
 I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\bin\Debug\netcoreapp2.0\N2.BasicConcept.runtimeconfig.json
 I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\bin\Debug\netcoreapp2.0\N2.BasicConcept.runtimeconfig.dev.json
 I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\bin\Debug\netcoreapp2.0\N2.BasicConcept.dll
+I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\bin\Debug\netcoreapp2.0\N2.BasicConcept.pdb
+I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\obj\Debug\netcoreapp2.0\N2.BasicConcept.csprojResolveAssemblyReference.cache
 I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\obj\Debug\netcoreapp2.0\N2.BasicConcept.csproj.CoreCompileInputs.cache
 I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\obj\Debug\netcoreapp2.0\N2.BasicConcept.AssemblyInfoInputs.cache
 I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\obj\Debug\netcoreapp2.0\N2.BasicConcept.AssemblyInfo.cs
-I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\bin\Debug\netcoreapp2.0\N2.BasicConcept.pdb
 I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\obj\Debug\netcoreapp2.0\N2.BasicConcept.dll
 I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\obj\Debug\netcoreapp2.0\N2.BasicConcept.pdb
-I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\bin\Debug\netcoreapp2.0\nlog.config
-I:\source\LearningNetCore\LearningNetCore\N2.BasicConcept\obj\Debug\netcoreapp2.0\N2.BasicConcept.csprojResolveAssemblyReference.cache

@@ -1,0 +1,42 @@
+2017-12-25 13:47:46.9984||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-25 13:47:48.0016||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-25 13:47:48.2479||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 260.9112ms 404 text/plain 
+2017-12-25 13:47:54.1857||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/test   
+2017-12-25 13:47:54.3166||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.TestController.Get (N3.EF) in 34.2936ms 
+2017-12-25 13:47:54.4139||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request Value cannot be null.
+Parameter name: connectionString
+2017-12-25 13:47:54.5896||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 412.0194ms 500 text/html; charset=utf-8 
+2017-12-25 13:48:48.9847||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-25 13:48:49.8711||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-25 13:48:50.1228||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 267.3518ms 404 text/plain 
+2017-12-25 13:48:54.8988||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/test   
+2017-12-25 13:48:55.3058||INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.1-rtm-125 initialized 'TContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None 
+2017-12-25 13:48:56.8597||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (69ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0 
+2017-12-25 13:48:56.8800||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.TestController.Get (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-25 13:48:56.8967||INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 200 
+2017-12-25 13:48:56.9098||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.TestController.Get (N3.EF) in 1924.2233ms 
+2017-12-25 13:48:56.9325||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2033.4265ms 200  
+2017-12-25 13:50:32.4022||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-25 13:50:33.1378||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-25 13:50:33.4672||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 340.2447ms 404 text/plain 
+2017-12-25 13:50:37.0856||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/default/index   
+2017-12-25 13:50:37.1942||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.DefaultController.Index (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-25 13:50:37.1942||INFO|N3.EF.Controllers.DefaultController|Index page says hello world 
+2017-12-25 13:50:37.2291||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-25 13:50:37.3331||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.DefaultController.Index (N3.EF) in 152.2493ms 
+2017-12-25 13:50:37.3331||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 268.4753ms 200 application/json; charset=utf-8 
+2017-12-25 13:51:29.1956||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ITCenter\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2017-12-25 13:51:29.9143||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/   
+2017-12-25 13:51:30.1720||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 266.5872ms 404 text/plain 
+2017-12-25 13:51:34.7841||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/default/index   
+2017-12-25 13:51:34.9214||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method N3.EF.Controllers.DefaultController.Index (N3.EF) with arguments ((null)) - ModelState is Valid 
+2017-12-25 13:51:34.9317||INFO|N3.EF.Controllers.DefaultController|Index page says hello world 
+2017-12-25 13:51:34.9539||INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext. 
+2017-12-25 13:51:35.0641||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.DefaultController.Index (N3.EF) in 157.299ms 
+2017-12-25 13:51:35.0777||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 292.0823ms 200 application/json; charset=utf-8 
+2017-12-25 13:51:43.6057||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:18178/api/test   
+2017-12-25 13:51:43.6580||INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action N3.EF.Controllers.TestController.Get (N3.EF) in 21.8714ms 
+2017-12-25 13:51:43.7696||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request Value cannot be null.
+Parameter name: connectionString
+2017-12-25 13:51:43.9793||INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 362.2588ms 500 text/html; charset=utf-8 
