@@ -1,0 +1,14 @@
+{
+  //把IISExpress相关的内容删掉, 然后端口改为5000.
+  "profiles": {
+
+    "N4.IdentityServer": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000/"
+    }
+  }
+}
