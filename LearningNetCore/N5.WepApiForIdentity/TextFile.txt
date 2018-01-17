@@ -1,0 +1,11 @@
+﻿1、launchSettings.json, 修改为使用控制台，端口改为5001
+
+2、使用swagger
+通过nuget安装或者控制台 Install-Package Swashbuckle.AspNetCore
+之后在Startup的ConfigureServices文件中注册并配置Swagger, 
+然后在StartUp的Configure方法使用Swagger中间件
+
+3、使用nuget添加库IdentityServer4.AccessTokenValidation
+在Startup的ConfigureServices里面注册配置
+
+4、 打开ValuesController, 在Controller上面添加这个属性Authorize

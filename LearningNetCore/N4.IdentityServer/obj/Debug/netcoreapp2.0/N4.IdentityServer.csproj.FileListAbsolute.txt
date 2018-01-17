@@ -1,0 +1,11 @@
+I:\source\LearningNetCore\LearningNetCore\N4.IdentityServer\bin\Debug\netcoreapp2.0\N4.IdentityServer.deps.json
+I:\source\LearningNetCore\LearningNetCore\N4.IdentityServer\bin\Debug\netcoreapp2.0\N4.IdentityServer.runtimeconfig.json
+I:\source\LearningNetCore\LearningNetCore\N4.IdentityServer\bin\Debug\netcoreapp2.0\N4.IdentityServer.runtimeconfig.dev.json
+I:\source\LearningNetCore\LearningNetCore\N4.IdentityServer\bin\Debug\netcoreapp2.0\N4.IdentityServer.dll
+I:\source\LearningNetCore\LearningNetCore\N4.IdentityServer\bin\Debug\netcoreapp2.0\N4.IdentityServer.pdb
+I:\source\LearningNetCore\LearningNetCore\N4.IdentityServer\obj\Debug\netcoreapp2.0\N4.IdentityServer.csprojResolveAssemblyReference.cache
+I:\source\LearningNetCore\LearningNetCore\N4.IdentityServer\obj\Debug\netcoreapp2.0\N4.IdentityServer.csproj.CoreCompileInputs.cache
+I:\source\LearningNetCore\LearningNetCore\N4.IdentityServer\obj\Debug\netcoreapp2.0\N4.IdentityServer.AssemblyInfoInputs.cache
+I:\source\LearningNetCore\LearningNetCore\N4.IdentityServer\obj\Debug\netcoreapp2.0\N4.IdentityServer.AssemblyInfo.cs
+I:\source\LearningNetCore\LearningNetCore\N4.IdentityServer\obj\Debug\netcoreapp2.0\N4.IdentityServer.dll
+I:\source\LearningNetCore\LearningNetCore\N4.IdentityServer\obj\Debug\netcoreapp2.0\N4.IdentityServer.pdb
