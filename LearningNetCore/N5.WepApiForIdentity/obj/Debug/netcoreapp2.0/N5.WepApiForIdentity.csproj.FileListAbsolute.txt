@@ -3,9 +3,9 @@ I:\source\LearningNetCore\LearningNetCore\N5.WepApiForIdentity\bin\Debug\netcore
 I:\source\LearningNetCore\LearningNetCore\N5.WepApiForIdentity\bin\Debug\netcoreapp2.0\N5.WepApiForIdentity.runtimeconfig.dev.json
 I:\source\LearningNetCore\LearningNetCore\N5.WepApiForIdentity\bin\Debug\netcoreapp2.0\N5.WepApiForIdentity.dll
 I:\source\LearningNetCore\LearningNetCore\N5.WepApiForIdentity\bin\Debug\netcoreapp2.0\N5.WepApiForIdentity.pdb
-I:\source\LearningNetCore\LearningNetCore\N5.WepApiForIdentity\obj\Debug\netcoreapp2.0\N5.WepApiForIdentity.csprojResolveAssemblyReference.cache
 I:\source\LearningNetCore\LearningNetCore\N5.WepApiForIdentity\obj\Debug\netcoreapp2.0\N5.WepApiForIdentity.csproj.CoreCompileInputs.cache
 I:\source\LearningNetCore\LearningNetCore\N5.WepApiForIdentity\obj\Debug\netcoreapp2.0\N5.WepApiForIdentity.AssemblyInfoInputs.cache
 I:\source\LearningNetCore\LearningNetCore\N5.WepApiForIdentity\obj\Debug\netcoreapp2.0\N5.WepApiForIdentity.AssemblyInfo.cs
 I:\source\LearningNetCore\LearningNetCore\N5.WepApiForIdentity\obj\Debug\netcoreapp2.0\N5.WepApiForIdentity.dll
 I:\source\LearningNetCore\LearningNetCore\N5.WepApiForIdentity\obj\Debug\netcoreapp2.0\N5.WepApiForIdentity.pdb
+I:\source\LearningNetCore\LearningNetCore\N5.WepApiForIdentity\obj\Debug\netcoreapp2.0\N5.WepApiForIdentity.csprojResolveAssemblyReference.cache

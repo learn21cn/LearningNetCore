@@ -1,0 +1,11 @@
+I:\source\LearningNetCore\LearningNetCore\N8.EFIdentityServer\bin\Debug\netcoreapp2.0\N8.EFIdentityServer.deps.json
+I:\source\LearningNetCore\LearningNetCore\N8.EFIdentityServer\bin\Debug\netcoreapp2.0\N8.EFIdentityServer.runtimeconfig.json
+I:\source\LearningNetCore\LearningNetCore\N8.EFIdentityServer\bin\Debug\netcoreapp2.0\N8.EFIdentityServer.runtimeconfig.dev.json
+I:\source\LearningNetCore\LearningNetCore\N8.EFIdentityServer\bin\Debug\netcoreapp2.0\N8.EFIdentityServer.dll
+I:\source\LearningNetCore\LearningNetCore\N8.EFIdentityServer\bin\Debug\netcoreapp2.0\N8.EFIdentityServer.pdb
+I:\source\LearningNetCore\LearningNetCore\N8.EFIdentityServer\obj\Debug\netcoreapp2.0\N8.EFIdentityServer.csproj.CoreCompileInputs.cache
+I:\source\LearningNetCore\LearningNetCore\N8.EFIdentityServer\obj\Debug\netcoreapp2.0\N8.EFIdentityServer.AssemblyInfoInputs.cache
+I:\source\LearningNetCore\LearningNetCore\N8.EFIdentityServer\obj\Debug\netcoreapp2.0\N8.EFIdentityServer.AssemblyInfo.cs
+I:\source\LearningNetCore\LearningNetCore\N8.EFIdentityServer\obj\Debug\netcoreapp2.0\N8.EFIdentityServer.dll
+I:\source\LearningNetCore\LearningNetCore\N8.EFIdentityServer\obj\Debug\netcoreapp2.0\N8.EFIdentityServer.pdb
+I:\source\LearningNetCore\LearningNetCore\N8.EFIdentityServer\obj\Debug\netcoreapp2.0\N8.EFIdentityServer.csprojResolveAssemblyReference.cache

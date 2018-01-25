@@ -3,9 +3,9 @@ I:\source\LearningNetCore\LearningNetCore\N7.NewMvcClient\bin\Debug\netcoreapp2.
 I:\source\LearningNetCore\LearningNetCore\N7.NewMvcClient\bin\Debug\netcoreapp2.0\N7.NewMvcClient.runtimeconfig.dev.json
 I:\source\LearningNetCore\LearningNetCore\N7.NewMvcClient\bin\Debug\netcoreapp2.0\N7.NewMvcClient.dll
 I:\source\LearningNetCore\LearningNetCore\N7.NewMvcClient\bin\Debug\netcoreapp2.0\N7.NewMvcClient.pdb
-I:\source\LearningNetCore\LearningNetCore\N7.NewMvcClient\obj\Debug\netcoreapp2.0\N7.NewMvcClient.csprojResolveAssemblyReference.cache
 I:\source\LearningNetCore\LearningNetCore\N7.NewMvcClient\obj\Debug\netcoreapp2.0\N7.NewMvcClient.csproj.CoreCompileInputs.cache
 I:\source\LearningNetCore\LearningNetCore\N7.NewMvcClient\obj\Debug\netcoreapp2.0\N7.NewMvcClient.AssemblyInfoInputs.cache
 I:\source\LearningNetCore\LearningNetCore\N7.NewMvcClient\obj\Debug\netcoreapp2.0\N7.NewMvcClient.AssemblyInfo.cs
 I:\source\LearningNetCore\LearningNetCore\N7.NewMvcClient\obj\Debug\netcoreapp2.0\N7.NewMvcClient.dll
 I:\source\LearningNetCore\LearningNetCore\N7.NewMvcClient\obj\Debug\netcoreapp2.0\N7.NewMvcClient.pdb
+I:\source\LearningNetCore\LearningNetCore\N7.NewMvcClient\obj\Debug\netcoreapp2.0\N7.NewMvcClient.csprojResolveAssemblyReference.cache

@@ -3,7 +3,6 @@ I:\source\LearningNetCore\LearningNetCore\N6.MvcClientForIdentity\bin\Debug\netc
 I:\source\LearningNetCore\LearningNetCore\N6.MvcClientForIdentity\bin\Debug\netcoreapp2.0\N6.MvcClientForIdentity.runtimeconfig.dev.json
 I:\source\LearningNetCore\LearningNetCore\N6.MvcClientForIdentity\bin\Debug\netcoreapp2.0\N6.MvcClientForIdentity.dll
 I:\source\LearningNetCore\LearningNetCore\N6.MvcClientForIdentity\bin\Debug\netcoreapp2.0\N6.MvcClientForIdentity.pdb
-I:\source\LearningNetCore\LearningNetCore\N6.MvcClientForIdentity\obj\Debug\netcoreapp2.0\N6.MvcClientForIdentity.csprojResolveAssemblyReference.cache
 I:\source\LearningNetCore\LearningNetCore\N6.MvcClientForIdentity\obj\Debug\netcoreapp2.0\N6.MvcClientForIdentity.csproj.CoreCompileInputs.cache
 I:\source\LearningNetCore\LearningNetCore\N6.MvcClientForIdentity\obj\Debug\netcoreapp2.0\N6.MvcClientForIdentity.AssemblyInfoInputs.cache
 I:\source\LearningNetCore\LearningNetCore\N6.MvcClientForIdentity\obj\Debug\netcoreapp2.0\N6.MvcClientForIdentity.AssemblyInfo.cs

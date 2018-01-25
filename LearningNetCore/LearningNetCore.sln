@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N5.WepApiForIdentity", "N5.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N6.MvcClientForIdentity", "N6.MvcClientForIdentity\N6.MvcClientForIdentity.csproj", "{3F009D95-A758-41C7-B84D-EB19EBA219B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N7.NewMvcClient", "N7.NewMvcClient\N7.NewMvcClient.csproj", "{BADEFEC0-8CFE-4168-B4BE-3D0A963EAB00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N7.NewMvcClient", "N7.NewMvcClient\N7.NewMvcClient.csproj", "{BADEFEC0-8CFE-4168-B4BE-3D0A963EAB00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N8.EFIdentityServer", "N8.EFIdentityServer\N8.EFIdentityServer.csproj", "{B55AE17B-095C-4FFE-A023-0FA9CA6471E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{BADEFEC0-8CFE-4168-B4BE-3D0A963EAB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BADEFEC0-8CFE-4168-B4BE-3D0A963EAB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BADEFEC0-8CFE-4168-B4BE-3D0A963EAB00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B55AE17B-095C-4FFE-A023-0FA9CA6471E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B55AE17B-095C-4FFE-A023-0FA9CA6471E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B55AE17B-095C-4FFE-A023-0FA9CA6471E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B55AE17B-095C-4FFE-A023-0FA9CA6471E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
