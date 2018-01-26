@@ -60,6 +60,17 @@ namespace N8.EFIdentityServer
                     options.TokenCleanupInterval = 30;
                 });
 
+            services.AddCors(options =>
+            {
+                // this defines a CORS policy called "default"
+                options.AddPolicy("default", policy =>
+                {
+                    policy.WithOrigins("http://localhost:5006")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
 
             services.AddMvc();
         }
@@ -74,9 +85,13 @@ namespace N8.EFIdentityServer
                 app.UseDeveloperExceptionPage();
                
             }
+            app.UseCors("default");
+
             //先用nuget安装IdentityServer
             app.UseIdentityServer();
             app.UseStaticFiles();
+
+
             app.UseMvcWithDefaultRoute();
 
             //app.Run(async (context) =>

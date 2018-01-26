@@ -19,6 +19,7 @@ namespace N4.IdentityServer.Configuration
                 {
                     UserClaims = new [] { "email" }
                 }
+
             };
         }
 
@@ -102,7 +103,9 @@ namespace N4.IdentityServer.Configuration
                     AllowOfflineAccess = true,
                     AllowAccessTokensViaBrowser = true
 
-                }
+                }             
+
+
             };
         }
 

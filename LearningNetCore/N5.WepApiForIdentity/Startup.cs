@@ -41,6 +41,18 @@ namespace N5.WepApiForIdentity
                     options.ApiName = "testapi";
                 });
 
+            services.AddCors(options =>
+            {
+                // this defines a CORS policy called "default"
+                options.AddPolicy("default", policy =>
+                {
+                    policy.WithOrigins("http://localhost:5006")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "ApiForIdentity", Version = "v1" });
@@ -63,6 +75,7 @@ namespace N5.WepApiForIdentity
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiForIdentity v1");
             });
 
+            app.UseCors("default");
 
             //把验证中间件添加到管道里, 这样每次请求就会调用验证服务了. 
             //一定要在UserMvc()之前调用

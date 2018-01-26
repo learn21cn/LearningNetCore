@@ -1,0 +1,12 @@
+I:\source\LearningNetCore\LearningNetCore\N9.NewServer\bin\Debug\netcoreapp2.0\N9.NewServer.deps.json
+I:\source\LearningNetCore\LearningNetCore\N9.NewServer\bin\Debug\netcoreapp2.0\N9.NewServer.runtimeconfig.json
+I:\source\LearningNetCore\LearningNetCore\N9.NewServer\bin\Debug\netcoreapp2.0\N9.NewServer.runtimeconfig.dev.json
+I:\source\LearningNetCore\LearningNetCore\N9.NewServer\bin\Debug\netcoreapp2.0\N9.NewServer.dll
+I:\source\LearningNetCore\LearningNetCore\N9.NewServer\obj\Debug\netcoreapp2.0\N9.NewServer.csprojResolveAssemblyReference.cache
+I:\source\LearningNetCore\LearningNetCore\N9.NewServer\obj\Debug\netcoreapp2.0\N9.NewServer.csproj.CoreCompileInputs.cache
+I:\source\LearningNetCore\LearningNetCore\N9.NewServer\obj\Debug\netcoreapp2.0\N9.NewServer.AssemblyInfoInputs.cache
+I:\source\LearningNetCore\LearningNetCore\N9.NewServer\obj\Debug\netcoreapp2.0\N9.NewServer.AssemblyInfo.cs
+I:\source\LearningNetCore\LearningNetCore\N9.NewServer\bin\Debug\netcoreapp2.0\N9.NewServer.pdb
+I:\source\LearningNetCore\LearningNetCore\N9.NewServer\obj\Debug\netcoreapp2.0\N9.NewServer.dll
+I:\source\LearningNetCore\LearningNetCore\N9.NewServer\obj\Debug\netcoreapp2.0\N9.NewServer.pdb
+I:\source\LearningNetCore\LearningNetCore\N9.NewServer\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

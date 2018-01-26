@@ -60,7 +60,7 @@ namespace N8.EFIdentityServer.Configuration
                     //登出之后重定向的网址. 
                     //有可能发生的情况是, 你登出网站的时候, 会重定向到Authorization Server, 并允许从Authorization Server也进行登出动作.
                     PostLogoutRedirectUris ={ "http://localhost:5002/signout-callback-oidc"},
-                    
+
                     AllowedScopes =new List<string>
                     {
                         // 这里有Api resources, 还有openId connect scopes(用来限定client可以访问哪些信息)
@@ -74,7 +74,7 @@ namespace N8.EFIdentityServer.Configuration
                 {
                     //要与客户端指定的名称一致
                     ClientId="mvc_code",
-                    ClientName="New MVC Client",                  
+                    ClientName="New MVC Client",
                     AllowedGrantTypes=GrantTypes.HybridAndClientCredentials,
 
                     ClientSecrets =
@@ -102,6 +102,27 @@ namespace N8.EFIdentityServer.Configuration
                     AllowOfflineAccess = true,
                     AllowAccessTokensViaBrowser = true
 
+                },
+
+                new Client
+                {
+                    ClientId = "js",
+                    ClientName = "JavaScript Client",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+                    AllowAccessTokensViaBrowser = true,
+
+                    RedirectUris =           { "http://localhost:5006/callback.html" },
+                    PostLogoutRedirectUris = { "http://localhost:5006/index.html" },
+                    AllowedCorsOrigins =     { "http://localhost:5006" },
+
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        IdentityServerConstants.StandardScopes.Email,
+                        "testapi"
+                    }
+                    
                 }
             };
         }
